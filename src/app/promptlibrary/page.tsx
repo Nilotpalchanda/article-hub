@@ -4,7 +4,7 @@ import { getAllPromptData } from './action';
 import TextCard from '@/components/card/TextCard';
 import { PROMPT_LIBRARY_METADATA } from './metadata';
 import { Suspense } from 'react';
-import Loading from './loading';
+import Loading from './Loader';
 
 type PromptsType = {
   id: string;
@@ -55,7 +55,6 @@ export default async function PromptLibrary() {
 }
 
 const PromptLibraryHandler = async () => {
-  await new Promise((resolve) => setTimeout(resolve, 1000)); // Simulate delay for suspense
   const promptData = await getAllPromptData();
 
   if (!promptData) {
