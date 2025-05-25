@@ -1,4 +1,5 @@
-# AI Search App
+# ArticleHub App
+![image](https://github.com/user-attachments/assets/d20e7695-c14e-4f24-83fa-5bc9dfc99aba)
 
 A modern, AI-powered search application built with [Next.js](https://nextjs.org/) and React. This project leverages advanced AI models to deliver fast, relevant, and intelligent search results for users.
 
@@ -14,7 +15,7 @@ A modern, AI-powered search application built with [Next.js](https://nextjs.org/
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (v16+ recommended)
+- [Node.js](https://nodejs.org/) (v20+ recommended)
 - [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
 ### Installation
