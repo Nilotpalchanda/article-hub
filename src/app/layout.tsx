@@ -4,12 +4,14 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'ArticleHub - Your Source for Trending Articles',
-  description: 'Discover the latest and most popular articles across various categories. Stay informed with ArticleHub.',
+  description:
+    'Discover the latest and most popular articles across various categories. Stay informed with ArticleHub.',
 };
 
 export default function RootLayout({
@@ -22,9 +24,12 @@ export default function RootLayout({
       >
         <Header />
         <main className="flex flex-grow flex-col">
-          <div className="flex flex-grow justify-center">{children}</div>
+          <div className="flex flex-grow justify-center">
+            {children}
+            <SpeedInsights />
+          </div>
         </main>
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
