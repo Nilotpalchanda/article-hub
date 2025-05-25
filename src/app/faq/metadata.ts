@@ -5,7 +5,15 @@ export const FAQ_SCREEN_METADATA = {
     openGraph: {
         title: 'FAQ - Frequently Asked Questions',
         description: 'Get answers to your questions about our blog platform.',
-        url: '/faq',
+        url: 'https://article-hub-kappa.vercel.app/faq',
+        images: [
+            {
+                url: 'https://article-hub-kappa.vercel.app/og-image.png',
+                width: 225,
+                height: 225,
+                alt: 'FAQ ArticleHub',
+            },
+        ],
         type: 'website',
     },
 };

@@ -39,6 +39,7 @@ export async function generateMetadata(
     openGraph: {
       title: article.title,
       description: article.description,
+      url: `https://article-hub-kappa.vercel.app/${article.category.toLowerCase()}/${article.id}`,
       images: [
         {
           url: article.image,

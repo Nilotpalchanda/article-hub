@@ -38,7 +38,7 @@ export function VerticalCard({
   return (
     <div
       className={cn(
-        'flex flex-col rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-xl bg-white',
+        'flex flex-col rounded-lg bg-white shadow-lg transition-shadow duration-300 hover:shadow-xl',
         className,
       )}
     >
@@ -50,7 +50,7 @@ export function VerticalCard({
           <span>{category}</span>
           <div className="ml-2 flex">{stars}</div>
         </div>
-        <h3 className="mb-1 line-clamp-2 text-sm font-medium">{title}</h3>
+        <h2 className="mb-1 line-clamp-2 text-sm font-medium">{title}</h2>
         <p className="mb-1 line-clamp-2 text-xs text-gray-500">{description}</p>
         <div className="mt-auto flex items-center gap-2">
           <Link
@@ -59,6 +59,7 @@ export function VerticalCard({
             type="button"
             aria-label={`Read more about ${title}`}
           >
+            <span className="sr-only">{`Read more about ${title}`}</span>
             Read more
           </Link>
         </div>

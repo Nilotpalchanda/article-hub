@@ -12,7 +12,15 @@ export const PROMPT_LIBRARY_METADATA = {
   openGraph: {
     title: "Prompt Library | ArticleHub",
     description: "Discover our most current and trending articles curated just for you.",
-    url: "https://yourdomain.com/viewparticles",
+    url: "https://article-hub-kappa.vercel.app/promptlibrary",
+    images: [
+      {
+        url: "https://article-hub-kappa.vercel.app/og-image.png",
+        width: 225,
+        height: 225,
+        alt: "Prompt Library ArticleHub",
+      },
+    ],
     siteName: "ArticleHub",
     type: "website",
   },

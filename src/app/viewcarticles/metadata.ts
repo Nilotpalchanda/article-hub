@@ -12,7 +12,15 @@ export const VIEW_CURRENT_ARTICLES_METADATA = {
   openGraph: {
     title: "Current Articles | ArticleHub",
     description: "Discover our most current and trending articles curated just for you.",
-    url: "https://yourdomain.com/viewparticles",
+    url: "https://article-hub-kappa.vercel.app/viewarticles",
+    images: [
+      {
+        url: "https://article-hub-kappa.vercel.app/og-image.png",
+        width: 225,
+        height: 225,
+        alt: "Current Articles ArticleHub",
+      },
+    ],
     siteName: "ArticleHub",
     type: "website",
   },

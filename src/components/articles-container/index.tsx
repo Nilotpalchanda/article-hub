@@ -56,12 +56,13 @@ export default function ArticlesContainer({
               </p>
               <div className="mt-auto flex items-center gap-2">
                 <Link
-                  href={`${viewAllLink}/${article.id}`}
+                  href={`/${article.category}/${article.id}`}
                   className="mt-1 flex items-center gap-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-xs text-transparent hover:from-blue-700 hover:to-pink-700"
                   type="button"
                   aria-label={`Read more about ${article.title}`}
                 >
-                  Read more
+                  <span className="sr-only">Read more about {article.title}</span>
+                  <span aria-hidden="true">Read more</span>
                 </Link>
               </div>
             </div>

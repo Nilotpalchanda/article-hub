@@ -7,6 +7,16 @@ export const HOME_SCREEN_METADATA = {
         description: 'Discover the latest articles and tutorials on ArticleHub.',
         siteName: 'ArticleHub',
         type: 'website',
+        url: 'https://article-hub-kappa.vercel.app/',
+        images: [
+            {
+                url: 'https://article-hub-kappa.vercel.app/og-image.png',
+                width: 225,
+                height: 225,
+                alt: 'ArticleHub Home Page',
+            },
+        ],
+
     },
     twitter: {
         card: 'summary_large_image',

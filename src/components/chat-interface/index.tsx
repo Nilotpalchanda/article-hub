@@ -140,7 +140,11 @@ export default function SearchChatInterface() {
               onKeyDown={handleKeyDown}
               disabled={isChat}
             />
-            <button className="p-1 rounded-full bg-gradient-to-r from-teal-400 via-cyan-400 to-blue-400 hover:brightness-110 transition">
+            <button
+              className="p-1 rounded-full bg-gradient-to-r from-teal-400 via-cyan-400 to-blue-400 hover:brightness-110 transition"
+              aria-label="Suggest a question"
+              title="Suggest a question"
+            >
               <Sparkles className="h-5 w-5 text-white" />
             </button>
           </div>
@@ -315,14 +319,14 @@ type TryAskProps = {
 };
 
 const TryAsk = ({ handleBadgeClick }: TryAskProps) => {
-  const [lastUsedPromts, setLastUsedPromts] = useState<string[]>([]);
+  const [lastUsedPrompts, setLastUsedPrompts] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     let isMounted = true;
     getHomeScreenData().then((data) => {
       if (isMounted) {
-        setLastUsedPromts(data.lastUsedPromts || []);
+        setLastUsedPrompts(data.lastUsedPrompts || []);
         setLoading(false);
       }
     });
@@ -352,7 +356,7 @@ const TryAsk = ({ handleBadgeClick }: TryAskProps) => {
       <span className="text-sm text-black">Try asking:</span>
 
       <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
-        {lastUsedPromts.map((prompt, index) => (
+        {lastUsedPrompts.map((prompt, index) => (
           <button
             key={index}
             className="rounded-full bg-white px-4 py-1.5 text-xs shadow-lg hover:bg-gradient-to-r hover:from-blue-100 hover:via-cyan-100 hover:to-teal-100"

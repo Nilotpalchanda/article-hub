@@ -12,7 +12,15 @@ export const VIEW_PARTICLES_METADATA = {
   openGraph: {
     title: "Popular Articles | ArticleHub",
     description: "Discover our most popular and trending articles curated just for you.",
-    url: "https://yourdomain.com/viewparticles",
+    url: "https://article-hub-kappa.vercel.app/viewparticles",
+    images: [
+      {
+        url: "https://article-hub-kappa.vercel.app/og-image.png",
+        width: 225,
+        height: 225,
+        alt: "Popular Articles ArticleHub",
+      },
+    ],
     siteName: "ArticleHub",
     type: "website",
   },

@@ -25,7 +25,7 @@ const AboutPage = () => {
           </h1>
         </div>
         <p className="mb-4 text-lg text-gray-700">
-          Welcome to our blog! We are passionate about sharing knowledge,
+          Welcome to ArticleHub! We are passionate about sharing knowledge,
           stories, and inspiration with our readers.
         </p>
         <p className="mb-4 text-lg text-gray-700">

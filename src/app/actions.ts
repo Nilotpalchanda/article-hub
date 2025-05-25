@@ -18,10 +18,10 @@ type AIResponse = {
     category: string;
   };
   suggestions: string[];
-  lastUsedPromts?: string[];
+  lastUsedPrompts?: string[];
 };
 
-export async function getHomeScreenData(): Promise<{ currentArticles: article[]; popularArticles: article[]; promptLibrary: article[], lastUsedPromts: string[] }> {
+export async function getHomeScreenData(): Promise<{ currentArticles: article[]; popularArticles: article[]; promptLibrary: article[], lastUsedPrompts: string[] }> {
   // Fetch data from the home screen API
   try {
     const res = await fetch(`${process.env.API_DOMAIN}/api/home-screen`);
@@ -30,11 +30,11 @@ export async function getHomeScreenData(): Promise<{ currentArticles: article[];
       currentArticles: data.currentArticles || [],
       popularArticles: data.popularArticles || [],
       promptLibrary: data.promptLibrary || [],
-      lastUsedPromts: data.lastUsedPromts || []
+      lastUsedPrompts: data.lastUsedPrompts || []
     };
   } catch (err) {
     console.error('Error in home screen api call:::', err);
-    return { currentArticles: [], popularArticles: [], promptLibrary: [] , lastUsedPromts: []  };
+    return { currentArticles: [], popularArticles: [], promptLibrary: [] , lastUsedPrompts: []  };
   }
 };
 
