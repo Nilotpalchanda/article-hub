@@ -69,7 +69,7 @@ const Header: React.FC = () => {
         >
           <ul className="flex flex-col space-y-2 px-4 py-4 md:flex-row md:space-y-0 md:space-x-6 md:p-0">
             {NAV_LINKS.map(({ href, label }) => (
-              <li key={href}>
+              <li key={href} className="bg-transparent">
                 <Link
                   href={href}
                   onClick={() => setMenuOpen(false)}

@@ -14,7 +14,7 @@ type PromptsType = {
 
 export const metadata: Metadata = { ...PROMPT_LIBRARY_METADATA };
 
-export default async function PromptLibrary() {
+export default function PromptLibrary() {
   return (
     <div className="container mx-auto max-w-6xl flex-grow px-0 md:px-4 mb-8">
       {/* Banner Section */}
@@ -24,8 +24,7 @@ export default async function PromptLibrary() {
           alt="Prompt Library Banner"
           width={1200}
           height={800}
-          loading="lazy"
-          priority={false}
+          priority
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent" />

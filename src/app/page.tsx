@@ -9,7 +9,7 @@ import { HOME_SCREEN_METADATA } from './metadata';
 
 export const metadata : Metadata = {...HOME_SCREEN_METADATA};
 
-export default async function HomePage() {
+export default function HomePage() {
   return (
     <div className="max-w-6xl px-4 mb-20">
       <ChatStateProvider>

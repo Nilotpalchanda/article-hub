@@ -32,13 +32,12 @@ export default async function ViewPopulararticles() {
           alt="Popular Articles Banner"
           width={1200}
           height={800}
-          loading='lazy'
-          priority={false}
+          priority
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center">
-          <h1 className="text-2xl font-extrabold text-white uppercase drop-shadow-lg sm:text-4xl md:text-5xl">
+          <h1 className="text-2xl font-extrabold uppercase text-white drop-shadow-lg sm:text-4xl md:text-5xl">
             Popular Articles
           </h1>
           <p className="mx-auto mt-2 max-w-2xl text-base font-medium text-white/90 sm:text-lg md:text-xl">
@@ -50,7 +49,7 @@ export default async function ViewPopulararticles() {
       {/* End Banner Section */}
       <div className="px-4 md:px-0">
         <div className="mb-10 text-left">
-          <h1 className="mb-2 text-xl font-bold text-black uppercase">
+          <h1 className="mb-2 text-xl font-bold uppercase text-black">
             Popular Articles
           </h1>
           <div className="mt-4 h-1 w-48 rounded bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></div>

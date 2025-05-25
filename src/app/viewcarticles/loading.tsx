@@ -37,8 +37,7 @@ export default function Loading() {
           alt="Current Articles Banner"
           width={1200}
           height={800}
-          loading="lazy"
-          priority={false}
+          priority
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent" />
